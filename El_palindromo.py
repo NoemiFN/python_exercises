@@ -9,7 +9,7 @@ cadena de texto es palíndromo o no.'''
 def palindromo():
    text_minus = texto.lower()                   #convierte el texto a minusculas
    text_without_spaces = text_minus.replace(" ", "")   #reemplaza los espacios para facilitar la identificacion del palíndromo
-   if text_without_spaces == text_without_spaces[::-1]:
+   if text_without_spaces == text_without_spaces[::-1]: #los primeros dos puntos indican el primer elemento del texto, los segundos indican el último elemento, el -1 los invierte
       print('Tu frase o palabra es un palindromo')
    else:
       print('Tu frase o palabra NO es un palindromo')
